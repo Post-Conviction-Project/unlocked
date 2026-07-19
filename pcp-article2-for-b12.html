@@ -403,8 +403,68 @@
     .pcp-pullquote p { font-size: 21px; }
     .pcp-part { margin-left: -22px; margin-right: -22px; padding-left: 22px; padding-right: 22px; }
   }
+  .pcp-topbar{
+    max-width: 760px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+  }
+  .pcp-topbar-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pcp-topbar-left a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #141c26;
+  }
+  .pcp-topbar-tag{
+    font-size: 12px;
+    color: #046878;
+    font-weight: 500;
+  }
+  .pcp-topbar-donate{
+    display: inline-block;
+    background: #046878;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .03em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+  .pcp-topbar-donate:hover{ background: #058299; }
+
+  .pcp-page-footer{
+    max-width: 760px;
+    margin: 24px auto 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    color: #686a6e;
+    text-align: center;
+  }
+  .pcp-page-footer .pcp-footer-badge{
+    margin-top: 14px;
+  }
+  .pcp-page-footer .pcp-footer-badge img{
+    height: 90px;
+    width: auto;
+  }
 </style>
 <div class="pcp-page">
+<div class="pcp-topbar">
+  <div class="pcp-topbar-left">
+    <a href="https://www.postconvictionproject.org" target="_blank" rel="noopener">Post Conviction Project</a>
+    <span class="pcp-topbar-tag">Unlocked Blog</span>
+  </div>
+  <a class="pcp-topbar-donate" href="https://www.postconvictionproject.org/donate" target="_blank" rel="noopener">Donate</a>
+</div>
 <div class="pcp-post">
 
   <div class="pcp-hero-wrap" style="aspect-ratio: 1360/880; background:#0a0e14;">
@@ -792,5 +852,13 @@
   })();
   </script>
 
+</div>
+<div class="pcp-page-footer">
+  Post Conviction Project, Inc. provides post-conviction litigation, direct appeals, and reentry services across Florida.
+  <div class="pcp-footer-badge">
+    <a aria-label="Post Conviction Project Inc" href="https://app.candid.org/profile/15914874/post-conviction-project-inc-99-4847126/?pkId=b02fafa8-430c-4b38-9eb1-fc1fe4cef89f" target="_blank">
+      <img alt="Candid Platinum Transparency Seal" src="https://widgets.guidestar.org/prod/v1/pdp/transparency-seal/15914874/svg" />
+    </a>
+  </div>
 </div>
 </div>

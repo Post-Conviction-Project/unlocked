@@ -39,6 +39,44 @@
   }
   .topbar span.org{font-weight:600; color:var(--white);}
   .topbar span.tag{color:var(--teal); font-weight:500;}
+  .topbar-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .topbar-left a{
+    text-decoration:none;
+  }
+  .topbar-right{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .topbar-donate{
+    display:inline-block;
+    background:var(--teal);
+    color:var(--white);
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.03em;
+    padding:6px 14px;
+    border-radius:999px;
+    text-transform:uppercase;
+  }
+  .topbar-donate:hover{
+    background:#058299;
+  }
+  .footer-badge{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:14px;
+  }
+  .footer-badge img{
+    height:90px;
+    width:auto;
+  }
 
   /* ---- Hero ---- */
   .hero{
@@ -479,8 +517,13 @@
 <body>
 
   <div class="topbar">
-    <span class="org">Post Conviction Project</span>
-    <span class="tag">Unlocked Blog</span>
+    <div class="topbar-left">
+      <a href="https://www.postconvictionproject.org" target="_blank" rel="noopener"><span class="org">Post Conviction Project</span></a>
+      <span class="tag">Unlocked Blog</span>
+    </div>
+    <div class="topbar-right">
+      <a class="topbar-donate" href="https://www.postconvictionproject.org/donate" target="_blank" rel="noopener">Donate</a>
+    </div>
   </div>
 
   <div class="hero">
@@ -717,6 +760,11 @@
 
   <footer>
     Post Conviction Project, Inc. provides post-conviction litigation, direct appeals, and reentry services across Florida. If you're a defense attorney or member of the public interested in donating professional clothing to a Florida public defender's office, contact us. We can help point you in the right direction.
+    <div class="footer-badge">
+      <a aria-label="Post Conviction Project Inc" href="https://app.candid.org/profile/15914874/post-conviction-project-inc-99-4847126/?pkId=b02fafa8-430c-4b38-9eb1-fc1fe4cef89f" target="_blank">
+        <img alt="Candid Platinum Transparency Seal" src="https://widgets.guidestar.org/prod/v1/pdp/transparency-seal/15914874/svg" />
+      </a>
+    </div>
   </footer>
 
 <script>
